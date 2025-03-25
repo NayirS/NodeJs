@@ -1,18 +1,14 @@
-Voici tes notes restructurées en **Markdown** pour plus de clarté et d'organisation :  
+# Notes NodesJS 
 
----
+## 🔹 Typage  
 
-#  **Notes Node.js & API REST**
+- **Typage dynamique** :  
+  - Détection du type à l'exécution, pas à la compilation.  
+  - Impossible de détecter les erreurs de type avant la mise en production.  
+  - Le type d'une variable change en fonction de son contenu.  
 
-##  **Typage**
-### **Typage dynamique**
-- Détection des types **à l'exécution**, pas à la compilation.
-- Impossible de détecter les erreurs avant la mise en production.
-- Les types changent en fonction du **contenu des variables**.
-
-### **Typage statique**
-- Les erreurs de type peuvent être **détectées à la compilation**.
-- Améliore la **sécurité** et la **maintenabilité** du code.
+- **Typage statique** :  
+  - Les incohérences de type peuvent être détectées à la compilation.  
 
 ---
 
@@ -41,7 +37,7 @@ Voici tes notes restructurées en **Markdown** pour plus de clarté et d'organis
    - Un pour la **compilation** (`pnpm build`).
    - Un pour l'**exécution** (`pnpm dev`).
 
-3. Charger les variables d'environnement dans `index.ts` :
+3. Charger les variables d'environnement dans `index.ts` :  
    ```ts
    import dotenv from 'dotenv';
    dotenv.config();
