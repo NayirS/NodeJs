@@ -6,6 +6,6 @@ export const app = Express();
 //Nous allons créer notre première route
 // une route: l'association Method http + URL 
 app.get("/", (req: Request, res: Response) => {
-    res.status(200).send("Hello from my REST API");
+    res.status(200).json("Hello from my REST API");
   });
   
